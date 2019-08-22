@@ -11,7 +11,12 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  return array.sort[-1]
+  max_num = 0
+  for num in array do
+    if num > max_num
+      max_num = num
+    end
+  end
 end
 
 def find_min_value(array)
